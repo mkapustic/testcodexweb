@@ -53,12 +53,13 @@ p { color: var(--muted); }
 .brand-text { color: var(--primary); font-family: var(--font-heading); font-size: 1rem; letter-spacing: .04em; text-transform: uppercase; }
 .brand-subtitle { font-size: .56rem; text-transform: uppercase; color: #888; letter-spacing: .2em; }
 .navbar-nav { gap: .35rem; }
-.nav-link { text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: #222; position: relative; padding: 1.35rem .75rem !important; }
+.nav-link { text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: #222; position: relative; padding: 1.35rem .75rem !important; display: inline-flex; align-items: center; }
 .nav-link::after { content: ''; position: absolute; left: .75rem; right: .75rem; height: 2px; bottom: .88rem; background: var(--primary); transform: scaleX(0); transform-origin: left; transition: .25s ease; }
 .nav-link:hover,.nav-link.active { color: var(--primary); }
 .nav-link:hover::after,.nav-link.active::after { transform: scaleX(1); }
-.contact-link { background: var(--primary); color: #fff !important; margin-left: .35rem; padding: .6rem .9rem !important; }
+.contact-link { background: var(--primary); color: #fff !important; margin-left: .35rem; padding: .52rem .95rem !important; min-height: 34px; transform: translateY(-1px); }
 .contact-link::after { display: none; }
+.contact-link:hover { background: var(--primary-dark); color: #fff !important; }
 .header-actions { gap: .4rem; }
 .header-action-btn { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid #ddd; background: #fff; color: #4e4e4e; text-decoration: none; }
 .header-action-btn:hover { border-color: var(--primary); color: var(--primary); background: #fff3f0; }
@@ -133,10 +134,12 @@ p { color: var(--muted); }
 .check-grid li::before { content:'✓'; position:absolute; left:0; color:var(--primary); }
 
 /* 13. customer service cards */
-.service-card { display:flex; background:#f0f0f0; border-radius: 0 14px 14px 0; overflow: hidden; min-height: 110px; }
-.service-plus { width: 52px; background: #dbdbdb; display:grid; place-items:center; font-size:1.5rem; color:#fff; }
-.service-card h4 { color: var(--primary); margin: .85rem 0 0; font-size: 1.6rem; }
-.service-card p { font-size: .88rem; margin-bottom: .9rem; }
+.service-card { display:flex; background:#f0f0f0; border-radius: 0 22px 22px 0; overflow: hidden; min-height: 118px; border: 1px solid #e2e2e2; }
+.service-plus { width: 52px; background: #d8d8d8; display:grid; place-items:center; font-size:1.5rem; color:#fff; flex-shrink: 0; }
+.service-content { padding: .8rem 1rem .65rem; }
+.service-eyebrow { text-transform: uppercase; font-size: .63rem; letter-spacing: .08em; color: #777; font-weight: 600; display: block; line-height: 1; }
+.service-card h4 { color: var(--primary); margin: .25rem 0 .1rem; font-size: 1.75rem; line-height: .95; }
+.service-card p { font-size: .84rem; margin-bottom: .1rem; line-height: 1.45; }
 .service-card:hover { transform: translateY(-3px); }
 .service-card:hover .service-plus { background: var(--primary); }
 
