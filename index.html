@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quote Nine | Premium Car Rental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="110" tabindex="0">
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#home" aria-label="Quote Nine home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy">
+            <span class="brand-text">Quote Nine</span>
+            <span class="brand-subtitle">Car Rental</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#electric">Electric</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#features" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+              <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+                <li><a class="dropdown-item" href="#features">Car Listings</a></li>
+                <li><a class="dropdown-item" href="#stories">Booking Form</a></li>
+                <li><a class="dropdown-item" href="#about">Pricing Plans</a></li>
+                <li><a class="dropdown-item" href="#contact">Customer Reviews</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link contact-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="header-actions d-none d-lg-flex">
+            <a href="#" class="header-action-btn" aria-label="Open cart"><i class="bi bi-cart"></i></a>
+            <a href="#" class="header-action-btn" aria-label="Open wishlist"><i class="bi bi-heart"></i></a>
+            <button class="header-action-btn" id="searchToggle" aria-label="Open search" type="button"><i class="bi bi-search"></i></button>
+            <a href="#" class="header-action-btn" aria-label="Open account"><i class="bi bi-person"></i></a>
+          </div>
+
+          <div class="mobile-header-actions d-lg-none mt-3">
+            <div class="mb-3">
+              <input type="search" class="form-control" placeholder="Search vehicles..." aria-label="Search vehicles">
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="header-action-btn" aria-label="Open cart"><i class="bi bi-cart"></i></a>
+              <a href="#" class="header-action-btn" aria-label="Open wishlist"><i class="bi bi-heart"></i></a>
+              <a href="#" class="header-action-btn" aria-label="Open account"><i class="bi bi-person"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-panel" id="searchPanel">
+      <form class="search-form" role="search">
+        <input id="searchInput" type="search" placeholder="Search models, brands, categories..." aria-label="Search website">
+        <button type="submit" class="btn btn-primary-custom">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-slider" id="heroSlider">
+        <article class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1610884882103-6ab54f1f5f42?auto=format&fit=crop&w=1800&q=80');">
+          <div class="container">
+            <div class="hero-content reveal">
+              <span class="eyebrow">Premium Car Rentals</span>
+              <h1>Premium Cars. Simple Booking.</h1>
+              <p>Find your next premium drive with flexible booking and transparent pricing.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#electric" class="btn btn-primary-custom">Browse Cars</a>
+                <a href="#contact" class="btn btn-outline-custom">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?auto=format&fit=crop&w=1800&q=80');"></article>
+        <article class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=80');"></article>
+        <button class="hero-nav prev" id="heroPrev" aria-label="Previous slide"><i class="bi bi-chevron-left"></i></button>
+        <button class="hero-nav next" id="heroNext" aria-label="Next slide"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section id="news" class="promo-section section-space">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5 reveal">
+            <article class="promo-card promo-main">
+              <h3>Car Dealership</h3>
+              <p>From weekend escapes to business travel, our fleet is ready when you are. Discover performance, luxury, and everyday confidence in one seamless booking experience.</p>
+            </article>
+          </div>
+          <div class="col-lg-7 reveal">
+            <article class="promo-card promo-side">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <i class="bi bi-car-front-fill"></i>
+                <h4>Drive beyond ordinary</h4>
+              </div>
+              <p>Choose from performance models, electric cars, SUVs, and daily drivers. Every car is fully insured, carefully maintained, and delivered with premium support.</p>
+              <div class="promo-dots"><span></span><span class="active"></span><span></span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-bar">
+      <div class="container">
+        <div class="row g-4 text-white">
+          <div class="col-sm-6 col-lg-3"><div class="benefit-item"><i class="bi bi-piggy-bank"></i><h6>Financing Made Easy</h6></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="benefit-item"><i class="bi bi-people"></i><h6>Trusted By Thousands Of People</h6></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="benefit-item"><i class="bi bi-award"></i><h6>Best Services</h6></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="benefit-item"><i class="bi bi-car-front"></i><h6>Looking For A New Car?</h6></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="electric" class="category-section section-space">
+      <div class="container">
+        <div class="category-grid" id="categoryTabs">
+          <button class="category-item" data-category="convertible"><i class="bi bi-telephone"></i><span>Convertible</span></button>
+          <button class="category-item" data-category="coupe"><i class="bi bi-record-circle"></i><span>Sports Coupe</span></button>
+          <button class="category-item active" data-category="supercar"><i class="bi bi-wrench-adjustable-circle"></i><span>Supercar</span></button>
+          <button class="category-item" data-category="finances"><i class="bi bi-coin"></i><span>Finances</span></button>
+          <button class="category-item" data-category="service"><i class="bi bi-gear"></i><span>Service</span></button>
+          <button class="category-item" data-category="fuel"><i class="bi bi-fuel-pump"></i><span>Fuel</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="dream-section pb-5">
+      <div class="container">
+        <div class="row g-4 align-items-center mb-4">
+          <div class="col-lg-6 reveal">
+            <div class="dream-image"><img src="https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&w=1200&q=80" alt="Silver luxury car on road"></div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <span class="eyebrow">Find Your Dream Car</span>
+            <h2 class="script-title">Quote Nine</h2>
+            <p>Explore a handpicked collection of premium vehicles designed for unforgettable drives and effortless daily comfort.</p>
+            <a href="#" class="btn btn-outline-custom">Read More</a>
+          </div>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1 reveal">
+            <span class="eyebrow">Find Your Dream Car</span>
+            <h2 class="script-title">Quote Nine</h2>
+            <p>Book in minutes, customize your plan, and hit the road with confidence. No hidden fees, no unnecessary complexity.</p>
+            <a href="#" class="btn btn-outline-custom">Read More</a>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 reveal">
+            <div class="dream-image"><img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=80" alt="Orange sports car"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="why-section section-space">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 reveal">
+            <span class="eyebrow">Why Choose Quote Nine?</span>
+            <p>We focus on reliability, premium standards, and a modern booking process that saves you time while giving you more control.</p>
+            <div class="feature-list">
+              <div><i class="bi bi-tags"></i><div><h6>Transparent Pricing</h6><p>Clear rates with no surprises.</p></div></div>
+              <div><i class="bi bi-building"></i><div><h6>Find Garage</h6><p>Convenient pickup points citywide.</p></div></div>
+              <div><i class="bi bi-shield-check"></i><div><h6>Premium Insurance</h6><p>Drive protected with smart coverage.</p></div></div>
+              <div><i class="bi bi-headset"></i><div><h6>Premium Support</h6><p>Dedicated team before and after booking.</p></div></div>
+            </div>
+            <div class="stats d-flex gap-4 mt-4">
+              <div><strong>2K+</strong><span>Sold Vehicles</span></div>
+              <div><strong>99%+</strong><span>Satisfied Customers</span></div>
+            </div>
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="btn btn-outline-custom">Sold Vehicles</a>
+              <a href="#" class="btn btn-outline-custom">Satisfied Customers</a>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal" id="about">
+            <span class="eyebrow">This Is What We Do</span>
+            <h2>Discover what sets us apart from other car rental services.</h2>
+            <div class="image-collage">
+              <img class="img-main" src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1100&q=80" alt="Garage luxury car">
+              <img class="img-overlay" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80" alt="Blue performance sedan">
+              <div class="experience-badge">15+<small>Years of<br>Experience</small></div>
+            </div>
+            <h5 class="mt-4">Great Features</h5>
+            <ul class="check-grid">
+              <li>Safety</li><li>Transparency</li><li>Trust</li><li>Support</li><li>Maintenance</li><li>Premium Cars</li>
+              <li>Best Price</li><li>Fast Delivery</li><li>Easy Booking</li><li>Insurance</li><li>Car Transport</li><li>Leasing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="service-section section-space">
+      <div class="container">
+        <div class="text-center mb-5 reveal"><span class="eyebrow">Customer Service</span></div>
+        <div class="row g-3">
+          <div class="col-md-6"><article class="service-card reveal"><div class="service-plus">+</div><div><h4>Unlimited Miles</h4><p>Drive as far as you want with flexible plans for road trips and business travel.</p></div></article></div>
+          <div class="col-md-6"><article class="service-card reveal"><div class="service-plus">+</div><div><h4>Mobile Reservations</h4><p>Reserve your preferred car on mobile in less than two minutes.</p></div></article></div>
+          <div class="col-md-6"><article class="service-card reveal"><div class="service-plus">+</div><div><h4>Special Rates</h4><p>Exclusive rates for weekend breaks, long-term rentals, and corporate clients.</p></div></article></div>
+          <div class="col-md-6"><article class="service-card reveal"><div class="service-plus">+</div><div><h4>Car Rentals</h4><p>From supercars to family SUVs, choose the right vehicle for every occasion.</p></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quality-section section-space">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 reveal">
+            <span class="eyebrow">Here Is An Example</span>
+            <h2>Quality Guaranteed</h2>
+            <p>Our commitment to detail ensures every vehicle is spotless, safe, and performance-ready before each handoff.</p>
+            <div class="d-flex gap-3">
+              <a href="#" class="btn btn-outline-custom">Read More</a>
+              <a href="#contact" class="btn btn-primary-custom">Book Now</a>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="quality-media">
+              <img class="main-img" src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1200&q=80" alt="Red supercar">
+              <img class="small-img" src="https://images.unsplash.com/photo-1593941707882-a5bac6861d75?auto=format&fit=crop&w=600&q=80" alt="Red sports coupe">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="newsletter-section">
+      <div class="container">
+        <div class="text-center mb-4"><h2>Newsletter</h2></div>
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="text" id="newsName" placeholder="Your name">
+          <input type="email" id="newsEmail" placeholder="name@email.com">
+          <button type="submit" class="btn btn-primary-custom">Subscribe</button>
+        </form>
+        <label class="form-check-label mt-2 d-flex justify-content-center gap-2">
+          <input type="checkbox" class="form-check-input mt-1" id="privacyAgree"> I agree to receive updates and promotions.
+        </label>
+        <p class="newsletter-message text-center mt-3" id="newsletterMessage"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
+        <a class="navbar-brand" href="#home" aria-label="Quote Nine home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy"><span class="brand-text">Quote Nine</span><span class="brand-subtitle">Car Rental</span></span>
+        </a>
+        <ul class="footer-nav list-unstyled d-flex flex-wrap justify-content-center gap-3 mb-0">
+          <li><a href="#">Cars</a></li><li><a href="#electric">Electric</a></li><li><a href="#">Diesel</a></li><li><a href="#">Hybrid</a></li><li><a href="#">SUV</a></li><li><a href="#">Racing</a></li><li><a href="#">F1</a></li>
+        </ul>
+        <div class="socials d-flex gap-2">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between mt-4 pt-3">
+        <small>© 2026 Quote Nine. All rights reserved.</small>
+        <small>Privacy Policy · Terms · Booking Policy</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Edit notes: replace Unsplash URLs in section backgrounds/images, update :root color variables in assets/scss/style.scss, and duplicate section blocks for new content modules. -->
+</body>
+</html>
+
